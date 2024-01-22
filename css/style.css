@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.product_card {
+    background-color: lightblue;
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+.product_card .thumbnail img {
+    width: 100%;
+}
+
+.product_card ul {
+    list-style-type: square;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+
+.price {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(239, 74, 35);
+}
+
+.product_card button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.product_card button:hover {
+    background-color: lightseagreen;
+    color: white;
+    transition: 0.5s;
+}
+
+.image_1 img,
+.sticky img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: rgb(15, 17, 17);
+    padding: 10px;
+    z-index: 100; 
+}
+
+.img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    z-index: 99; 
+}
+
+.img {
+    position: relative;
+}
+
+.img img {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
